@@ -1,5 +1,5 @@
 import React from 'react'
-import  { useState, useContext } from 'react';
+import  { useState } from 'react';
 
 const Navbar = () => {
 const [isNavbarOpen, setIsNavbarOpen] = useState(false);

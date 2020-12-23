@@ -39,6 +39,35 @@ img {
     display: block;
 }
 
+button {
+    font-size: 0.875rem;
+    padding: 0.5938rem 1.625rem;
+    color: #4A4A4A;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btn-light {
+    background-color: var(--clr-primary-100);
+    border: solid 1px var(--clr-primary-800) ;
+}
+
+.btn-primary {
+    border: 0;
+    color:var(--clr-primary-100) ;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
+    background-image: linear-gradient(90deg,var(--clr-primary-800),var(--clr-primary-400));
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    margin-left: 9.5%;
+    margin-right: 9.5%;
+}
+
 /*navbar start*/
 
 .navbar {
@@ -51,9 +80,7 @@ img {
 }
 
 .brand-title {
-
     display: flex;
-    /*justify-content: flex-end;*/
     align-items: center;
 }
 .brand-title img{
@@ -94,29 +121,8 @@ img {
     margin-left: .9375rem;
 }
 
-button {
-    font-size: 0.875rem;
-    padding: 0.5938rem 1.625rem;
-    color: #4A4A4A;
-    border-radius: 5px;
-}
-
-.btn-light {
-    background-color: var(--clr-primary-100);
-    border: solid 1px var(--clr-primary-800) ;
-}
-
-.btn-primary {
-    border: 0;
-    color:var(--clr-primary-100) ;
-    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14);
-    background-image: linear-gradient(90deg,var(--clr-primary-800),var(--clr-primary-400));
-}
-
 .navbar-links li a {
-
     text-decoration: none;
-
     padding: 1rem;
     display: block;
 }
@@ -146,12 +152,6 @@ button {
 
 /*navbar end*/
 
-.container {
-    margin-left: 9.5%;
-    margin-right: 9.5%;
-
-}
-
 /*hero starts*/
 .bg-hero {
     background-image: linear-gradient(180deg,var(--clr-primary-800),var(--clr-primary-400));
@@ -179,7 +179,6 @@ button {
 .hero-form form {
     display: flex;
     flex-direction: column;
-
 }
 
 .hero-form form > * {
@@ -234,13 +233,9 @@ button {
 
 .articles p {
     font-size: 1.125rem;
-
 }
 
-
 /*articles End*/
-
-
 
 /*team starts*/
 .bg-team {
@@ -255,10 +250,8 @@ button {
 }
 .team h1{
     font-size:2rem;
-    min-width: 24rem;
+    min-width: 20rem;
 }
-
-
 
 .team span {
     color: var(--clr-primary-800);
@@ -289,7 +282,6 @@ button {
     font-size: 1.75rem ;
 }
 
-
 .main-work {
     display: flex;
     flex-direction: column;
@@ -311,7 +303,6 @@ button {
     font-size: 1.125rem;
     color: var(--clr-primary-100);
     padding: 0 1em 1em 1em;
-
 }
 
 .grid-works {
@@ -322,12 +313,11 @@ button {
 
 /*register starts*/
 .register {
-
     display: flex;
     flex-direction: column;
 }
 .register button {
-    margin: auto;
+    margin: auto ;
 }
 .register-paragraph {
     margin: 2.125rem 0 2rem 0;
@@ -340,6 +330,40 @@ button {
 }
 
 /*register end*/
+
+/*footer start*/
+
+.footer-links img{
+    width: 5rem;
+}
+
+.footer-links {
+    display: flex;
+    margin: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+.line {
+    display: flex;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+footer p {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 0.625rem;
+}
+
+/*footer end*/
 
 /*media starts*/
 @media  (min-width: 700px){
@@ -360,7 +384,6 @@ button {
     }
 }
 
-
 @media (max-width: 1000px){
     .hero {
         flex-direction: column;
@@ -371,9 +394,7 @@ button {
         margin-top: 1rem;
         flex-basis: 0;
     }
-    .hero form {
-        margin: 0;
-    }
+
 
     .hero-paragraph h1 {
         line-height: 1.2;
@@ -408,6 +429,7 @@ button {
     .navbar {
         min-height: 3.75rem;
         height: 100%;
+        margin: 0 0 0 3rem;
         flex-direction:column
     }
     .toggle-button {
@@ -425,5 +447,11 @@ button {
         display: flex;
     }
 
+}
+
+@media (max-width: 700px) {
+    .footer-links {
+        flex-direction: column;
+    }
 }
 /*media end*/

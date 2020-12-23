@@ -6,6 +6,7 @@ import Articles from "./components/Articles";
 import Team from "./components/Team";
 import Register from "./components/Register";
 import Works from "./components/Works";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Team/>
     <Works/>
     <Register/>
+    <Footer/>
       </div>
   );
 }
